@@ -88,6 +88,7 @@ var randomEl = document.getElementsByClassName("random")[0]
 var Width = window.screen.width;
 
 if (Width<500) {
+    document.getElementsByTagName("body")[0].style.padding = "0";
     document.getElementsByClassName("container")[0].style.flexDirection = "column";
     randomEl.style.flexDirection = "column";
     document.getElementsByClassName("cont")[0].style.width = "90%";
