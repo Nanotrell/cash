@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +7,134 @@
     <title>Cash</title>
 </head>
 <body>
-    <div class="container">
-        <div class="section">
-            <p>Выбрать рандомно</p>
+    <main></main>
+    <div class="cont">
+        <div class="container">
+            <a class="section" id="presentrandom">
+                <p>Выбрать рандомно</p>
+            </a>
+            <a class="section" id="filter">
+                <p>Выбрать по фильтру</p>
+            </a>
         </div>
-        <div class="section">
-            <p>Выбрать по фильтру</p>
+        <div class="random">
+            <div class="photo"></div>
+            <div class="inf"></div>
         </div>
     </div>
+</body>
+<script>
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
 
-<script></script>
+
+
+
+
+    document.getElementById("presentrandom").onclick = RandomPresent;
+
+    function RandomPresent() {
+        let C = getRandomInt(1, 18)
+
+        if (C == 1) {
+
+        }
+        if (C == 2) {
+            
+        }
+        if (C == 3) {
+            
+        }
+        if (C == 4) {
+            
+        }
+        if (C == 5) {
+            
+        }
+        if (C == 6) {
+            
+        }
+        if (C == 7) {
+            
+        }
+        if (C == 8) {
+            
+        }
+        if (C == 9) {
+            
+        }
+        if (C == 10) {
+            
+        }
+        if (C == 11) {
+            
+        }
+        if (C == 12) {
+            
+        }
+        if (C == 13) {
+            
+        }
+        if (C == 14) {
+            
+        }
+        if (C == 15) {
+            
+        }
+        if (C == 16) {
+            
+        }
+        if (C == 17) {
+            
+        }
+        if (C == 18) {
+            
+        }
+        
+    }
+
+
+var k = getRandomInt(1, 12);
+console.log(k)
+var Body = document.getElementsByTagName("main")[0].style;
+if (k==1) {
+    Body.background = "radial-gradient(#e66465, #9198e5)";
+}
+if (k==2) {
+    Body.background = "radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(252,176,69,1) 100%)";
+}
+if (k==3) {
+    Body.background = "radial-gradient(circle, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%)";
+}
+if (k==4) {
+    Body.background = "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)";
+}
+if (k==5) {
+    Body.background = "radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(198,233,148,1) 100%)";
+}
+if (k==6) {
+    Body.background = "radial-gradient(circle, rgba(238,174,174,1) 0%, rgba(198,233,148,1) 100%)";
+}
+if (k==7) {
+    Body.background = "radial-gradient(circle, rgba(152,215,29,1) 0%, rgba(198,233,148,1) 100%)";
+}
+if (k==8) {
+    Body.background = "radial-gradient(circle, rgba(152,215,29,1) 0%, rgba(148,157,233,1) 100%)";
+}
+if (k==9) {
+    Body.background = "radial-gradient(circle, rgba(152,215,29,1) 0%, rgba(212,148,233,1) 100%)";
+}
+if (k==10) {
+    Body.background = "radial-gradient(circle, rgba(29,215,79,1) 0%, rgba(212,148,233,1) 100%)";
+}
+if (k==11) {
+    Body.background = "radial-gradient(circle, rgba(47,29,215,1) 0%, rgba(212,148,233,1) 100%)";
+}
+if (k==12) {
+    Body.background = "radial-gradient(circle, rgba(47,29,215,1) -40%, rgba(233,148,200,1) 100%)";
+}
+
+</script>
 </body>
 </html>

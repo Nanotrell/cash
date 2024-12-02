@@ -19,63 +19,37 @@
     src: url(fonts/Pomidor.otf);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
-    /* background: radial-gradient(#e66465, #9198e5); */
-
-    /* background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c); */
-
-    /* background: #121FCF;
-    background: radial-gradient(circle farthest-corner at center center, #121FCF 0%, #CF1512 100%); */
-
-    /* background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
-
-    /* background: rgb(131,58,180);
-    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
-
-    /* background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
-
-    /* background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(198,233,148,1) 100%); */
-
-    /* background: rgb(238,174,174);
-    background: radial-gradient(circle, rgba(238,174,174,1) 0%, rgba(198,233,148,1) 100%); */
-
-    /* background: rgb(152,215,29);
-    background: radial-gradient(circle, rgba(152,215,29,1) 0%, rgba(198,233,148,1) 100%); */
-
-    /* background: rgb(152,215,29);
-    background: radial-gradient(circle, rgba(152,215,29,1) 0%, rgba(148,157,233,1) 100%); */
-
-    /* background: rgb(152,215,29);
-    background: radial-gradient(circle, rgba(152,215,29,1) 0%, rgba(212,148,233,1) 100%); */
-
-    /* background: rgb(29,215,79);
-    background: radial-gradient(circle, rgba(29,215,79,1) 0%, rgba(212,148,233,1) 100%); */
-
-    /* background: rgb(47,29,215);
-    background: radial-gradient(circle, rgba(47,29,215,1) 0%, rgba(212,148,233,1) 100%); */
-
-    background: rgb(47,29,215);
-    background: radial-gradient(circle, rgba(47,29,215,1) -40%, rgba(233,148,200,1) 100%);
-
     height: 100vh;
-
+    /* overflow: scroll; */
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
 }
+main {
+    z-index: -100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
 
+.cont {
+    width: 60%;
+}
 
 .container {
     display: flex;
     justify-content: space-between;
-    width: 60%;
-    height: 400px;
+    width: 100%;
     font-size: 30px;
     font-family: "macherie";
     margin: 30px 0;
@@ -89,6 +63,8 @@ body {
     cursor: pointer;
     transition: .5s;
     text-align: center;
+    text-decoration: none;
+    color: #000;
 }
 
 @media (width<1000px) {
@@ -101,6 +77,19 @@ body {
         padding: 0px;
     }
 }
+
+.random {
+    border: 1px solid #000;
+    border-radius: 30px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* .photo {}
+
+.inf {} */
+
+
 
 .section:hover {
     box-shadow: #000;
