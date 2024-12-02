@@ -111,10 +111,10 @@ button {
         width: 80%;
     }
     
-.random {
-    flex-direction: column;
-    gap: 20px;
-}
+    .random {
+        flex-direction: column;
+        gap: 20px;
+    }
 
     .container {
         height: 150px;
