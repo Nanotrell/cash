@@ -23,6 +23,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0;
     padding: 0;
@@ -103,6 +104,9 @@ button {
 
 
 @media (width<1000px) {
+    .cont {
+        width: 80%;
+    }
     
 .random {
     flex-direction: column;
