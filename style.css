@@ -104,6 +104,9 @@ button {
 
 
 @media (width<1000px) {
+    * {
+        max-width: 90vw;
+    }
     .cont {
         width: 80%;
     }
