@@ -83,9 +83,16 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
+var randomEl = document.getElementsByClassName("random")[0]
+
 var Width = window.screen.width;
 
-var randomEl = document.getElementsByClassName("random")[0]
+if (Width<500) {
+    randomEl.style.flexDirection = "column";
+    randomEl.style.gap = "20px";
+}
+
+
 
     document.getElementById("presentrandom").onclick = RandomPresent;
 
