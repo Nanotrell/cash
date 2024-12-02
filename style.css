@@ -86,20 +86,7 @@ button {
     box-sizing: border-box;
 }
 
-@media (width<1000px) {
-    .container {
-        height: 150px;
-        font-size: 17px;
-        flex-direction: column;
-        
-    }
-    .section {
-        padding: 20px;
-    }
-    button {
-        font-size: 15px;
-    }
-}
+
 
 .random {
     display: flex;
@@ -112,6 +99,28 @@ button {
     border-radius: 30px;
     padding: 20px;
     width: 100%;
+}
+
+
+@media (width<1000px) {
+    
+.random {
+    flex-direction: column;
+    gap: 20px;
+}
+
+    .container {
+        height: 150px;
+        font-size: 17px;
+        flex-direction: column;
+        
+    }
+    .section {
+        padding: 20px;
+    }
+    button {
+        font-size: 15px;
+    }
 }
 
 /* .photo {}
