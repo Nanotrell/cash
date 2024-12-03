@@ -79,6 +79,17 @@
     </div>
 </body>
 <script>
+
+
+let A = document.getElementById("all").children;
+
+for (let index = 0; index < A.length; index++) {
+    A[index].style.width = "150px";
+    A[index].style.height = "112.5px";
+}
+
+
+
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
