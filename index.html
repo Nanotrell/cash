@@ -80,16 +80,6 @@
 </body>
 <script>
 
-
-let A = document.getElementById("all").children;
-
-for (let index = 0; index < A.length; index++) {
-    A[index].style.width = "150px";
-    A[index].style.height = "112.5px";
-}
-
-
-
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
@@ -104,6 +94,13 @@ if (Width<500) {
     randomEl.style.flexDirection = "column";
     document.getElementsByClassName("cont")[0].style.width = "90%";
     randomEl.style.gap = "20px";
+
+    let A = document.getElementById("all").getElementsByTagName("img");
+
+    for (let index = 0; index < A.length; index++) {
+        A[index].style.width = "150px";
+        A[index].style.height = "112.5px";
+    }
 }
 
 
